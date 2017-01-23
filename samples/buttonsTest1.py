@@ -13,8 +13,7 @@ class PythonOrgSearch(unittest.TestCase):
         driver.get("google.com")
 	time.sleep(5)
 	buttons = driver.find_elements_by_tag_name("button")
-	for i in buttons
-		button = buttons[i]
+	for button in buttons
 		if "Accept" in button.getText()
 			button.click()
 			return
