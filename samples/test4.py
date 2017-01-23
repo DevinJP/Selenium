@@ -5,7 +5,7 @@ display = Display(visible=0, size=(800, 600))
 display.start()
  
 browser = webdriver.Firefox()
-browser.get('http://54.209.45.155/monitor')
+browser.get('http://http://www.aacpl.net/')
 print browser.title
 browser.quit()
  
