@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# this is an ugly script to automate pcap collection of a raspberry pi
+# since the time on the device may not be accurate, added additional
+# random function using the MD5 of the tshark directory filelist
+# also use the reserve RANDOM bash function
+# DIR is the base directory
+DIR="/home/pi/src/TSHARK/"
+FILELIST=${DIR}filelist.txt
+#echo $FILELIST
+#echo $DIR
+/bin/ls -ltr $DIR > $FILELIST 
+RANDOM2=${DIR}random.txt
+/usr/bin/md5sum $FILELIST | awk '{print $1}' > $RANDOM2
+#echo $RANDOM2
+RR=$(/usr/bin/md5sum $FILELIST | awk '{print $1}' )
+OUTF=${DIR}"tcpdump_wlan1_"${RR}"_"$RANDOM"_%s.pcap"
+#echo $OUTF
+# now the command ready to run 
+# tcpdump will capture files for 600 seconds
+# and then will produce a new output file and end after 3 files
+# or 60*3 =  1 min x 3 = 3 min.
+# change the 60 duration or the number of files (3) to collect more
+CMD="/usr/sbin/tcpdump -pni wlan1 -s65535 -G 60 -w $OUTF -W 3"
+
+echo $CMD
+$CMD
