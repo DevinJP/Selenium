@@ -1,3 +1,7 @@
 to force a ping through a specific interface, use I option
 ping -I eth1 123.123.123.123
 ping -I wlan1 -c 20 www.google.com
+
+pi@raspberrypi:~/src/PYTHON/WIFI_SCAN $ ping -I wlan1 www.msftconnecttest.com
+PING 4-c-0003.c-msedge.net (13.107.4.52) from 172.16.0.108 wlan1: 56(84) bytes of data.
+64 bytes from 13.107.4.52: icmp_seq=1 ttl=123 time=21.2 ms
