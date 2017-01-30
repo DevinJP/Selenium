@@ -1,1 +1,9 @@
 
+to capture packets with tshark on the command line
+sudo tshark -i eth0   -a duration:5 -w temp.pcap
+which will capture for 5 seconds
+or 
+sudo tshark -i eth0 -a files:20  -b duration:5 -w temp.pcap
+which is suppose to collect 5 sec of pcap and then move to
+next file until 20 files are collected
+use capinfos filename to verify 5 sec of collect
