@@ -7,3 +7,16 @@ sudo tshark -i eth0 -a files:20  -b duration:5 -w temp.pcap
 which is suppose to collect 5 sec of pcap and then move to
 next file until 20 files are collected
 use capinfos filename to verify 5 sec of collect
+
+dumpcap is faster than tshark
+collect 15 secs of pcap into file and then open new file
+stop after 60 seconds of capture
+pi@raspberrypi:~/src/TSHARK $ sudo dumpcap -i eth0 0 -a duration:60   -b duration:15   -w www_eth0.pcap
+Capturing on 'eth0'
+File: www_eth0_00001_20170130170726.pcap
+Packets: 94 File: www_eth0_00002_20170130170741.pcap
+Packets: 206 File: www_eth0_00003_20170130170756.pcap
+Packets: 291 File: www_eth0_00004_20170130170811.pcap
+Packets captured: 369
+Packets received/dropped on interface 'eth0': 369/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (100.0%)
+pi@raspberrypi:~/src/TSHARK $ 
