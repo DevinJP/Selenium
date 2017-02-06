@@ -1,15 +1,15 @@
 # Done
 - create a script that will automatically log into avnet wifi network
 - basic generic script to log into most public wifi networks
+- generic to log into "most" public wifi
+- Python script to send UDP packets to AWS server to test connection info before and after authentication with network
 
 # Working on
-- finalizing generic to log into any public wifi
-- figuring out scapy functionaliy to automate tcp and udp packet sending/recieving
+- cleanin up autoLogin.py script
+- fully test and record with wireshark all transmissions going on for autoLogin
 
 # Next
-- use Scapy and wireshark to send UDP/TCP files to AWS server to test connections before and after authentication with network
-- put Scapy in a script 
+
 
 # Still left to do
-- create script to send packets from public network to server with network info and stats 
-- make it effiecient
+- make it efficient
