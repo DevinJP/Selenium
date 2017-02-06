@@ -34,6 +34,7 @@ def makePacket(status):
 	MESSAGE += "\nROUTER_IP:" + routerIP
 	MESSAGE += "\nROUTER_MAC:" + mac
 	if status == True:
+		#for external IP check, query to outside api
 		MESSAGE += "\nEXT_IP:" + urlopen('http://ip.42.pl/raw').read()
 	MESSAGE += "\n}"
 	return MESSAGE;
