@@ -7,16 +7,24 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from pyvirtualdisplay import Display
 
+DEST = "ec2-54-81-149-127.compute-1.amazonaws.com" #Dest IP
+DPORT = 83 #Dest Port
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) #UDP Socket
+display = Display(visible=0, size=(800,600))
+display.start()
+netIface = '' # ie. wlan0
+iwCommand = 'iwconfig ' + netIface
+
 def makePacket(status):
 	MESSAGE = "packet: {\nTime: "
-
+	
 	MESSAGE += strftime("%Y-%m-%d %H:%M:%S", localtime())
 
-	ni.ifaddresses('wlp2s0')
-	ip = ni.ifaddresses('wlp2s0')[2][0]['addr']
+	ni.ifaddresses(netIface)
+	ip = ni.ifaddresses(netIface)[2][0]['addr']
 	routerIP = ni.gateways()['default'].values()[0][0]
 
-	iwCall = subprocess.Popen(["iwconfig wlp2s0"], stdout=subprocess.PIPE, shell=True)
+	iwCall = subprocess.Popen([iwCommand], stdout=subprocess.PIPE, shell=True)
 	iwOutput = iwCall.communicate()[0].split()
 	SSID = iwOutput[3]
 	mac = iwOutput[9]
@@ -29,13 +37,6 @@ def makePacket(status):
 		MESSAGE += "\nEXT_IP:" + urlopen('http://ip.42.pl/raw').read()
 	MESSAGE += "\n}"
 	return MESSAGE;
-
-
-DEST = "ec2-54-81-149-127.compute-1.amazonaws.com" #Dest IP
-DPORT = 83 #Dest Port
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) #UDP Socket
-display = Display(visible=0, size=(800,600))
-display.start()
 
 #Packet before login
 beforePacket = makePacket(False) 
