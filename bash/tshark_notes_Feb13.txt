@@ -1,0 +1,15 @@
+
+these are example of using tshark to parse out data fields from the packets
+
+if each tshark command pulls out specific data, then a series of commands can be run and append the results to a single file
+then sorting the output file ( test.txt) will provide the time series of events for the login
+
+tshark -r filename -Y display rule -T fields -e 1stDisplayfield -e 2ndDisplayrule
+
+
+tshark -r tcpdump_Feb_13_2017.pcap -Y "bootp.type eq 1" -T fields -e frame.time -e eth.src -e eth.dst -e bootp.id
+tshark -r tcpdump_Feb_13_2017.pcap -Y "bootp.type eq 1" -T fields -e frame.time -e eth.src -e eth.dst -e bootp.id -e bootp.option.dhcp
+tshark -r tcpdump_Feb_13_2017.pcap -Y "bootp.type eq 2" -T fields -e frame.time -e eth.src -e eth.dst -e bootp.id -e bootp.option.dhcp
+tshark -r tcpdump_Feb_13_2017.pcap -Y "bootp.type eq 2" -T fields -e frame.time -e eth.src -e eth.dst -e bootp.id -e bootp.option.dhcp > test.txt
+tshark -r tcpdump_Feb_13_2017.pcap -Y "bootp.type eq 1" -T fields -e frame.time -e eth.src -e eth.dst -e bootp.id -e bootp.option.dhcp >> test.txt
+
