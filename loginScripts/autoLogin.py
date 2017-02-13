@@ -74,3 +74,4 @@ sock.sendto(afterPacket, (DEST, DPORT))
 
 driver.close()
 sock.close()
+display.close()
