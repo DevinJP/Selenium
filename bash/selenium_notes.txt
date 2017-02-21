@@ -1,0 +1,27 @@
+
+
+if the python code fails/ errors out, make sure Xvfb is terminated, otherwise multiple instance of Xvfb may slow/hang system
+
+
+def GetTime():
+    s = ''
+    my_time = datetime.datetime.now()
+    format = "%b_%d_%Y"
+    s = my_time.strftime(format)
+    return s
+def GetTIME():
+    s = ''
+    my_time = datetime.datetime.now()
+    format  = "%b_%d_%Y_%H_%M_%S"
+    s = my_time.strftime(format)
+    return s
+    
+    
+
+# how to create a snapshot of the screen (with a timestamp)
+temp_file1 = '/home/pi/PNG/login_step_one_%s.png' % GetTIME()
+browser.get_screenshot_as_file(temp_file2)
+
+
+# example clicking on button using the xpath    
+browser.find_element_by_xpath("""//button[@class='btn btn-primary']""").click() 
