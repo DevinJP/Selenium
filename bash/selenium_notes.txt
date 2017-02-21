@@ -17,6 +17,10 @@ def GetTIME():
     return s
     
     
+# save off the page html source  length to the log file
+logging.info('%s length of page_source is %s ' % (GetTIME(), len(browser.page_source)))
+# to save the actual source, use 'browser.page_source' 
+    
 
 # how to create a snapshot of the screen (with a timestamp)
 temp_file1 = '/home/pi/PNG/login_step_one_%s.png' % GetTIME()
