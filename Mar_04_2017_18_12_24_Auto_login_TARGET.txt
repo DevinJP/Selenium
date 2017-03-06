@@ -1,0 +1,351 @@
+u'<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><base href="https://n63.network-auth.com/splash/" />
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<meta content="text/html; charset=UTF-8" />
+<meta content="text/html; charset=UTF-8" />
+  <meta content="IE=Edge" />
+  <link type="image/x-icon" rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAA%0AAAAAAAD///////////7+///8/P7///////7+///f3/j/vLzx/7288f/g4Pj////////////8/P7/%0A/v7///////////////////7+///9/f///////7Gx7/8/Ptj/Dg3P/wAAy/8AAMv/Dw7P/0FA2f+0%0AtPD///////z8///////////////////+/v///f3+/2Vk4P8AAMn/AQHI/wAAyP8AAMv/AADL/wAA%0AyP8BAcj/AADJ/2pp4f///////v7////////9/f///////2tr4f8AAMj/AADK/yoq1P+Vler/xcXz%0A/8XF8/+Tk+n/JyfT/wAAyv8AAMj/cXDi///////9/f///////7m58f8AAMr/AADK/1FR2//4+P3/%0A//////7+///+/v////////b2/f9MS9r/AADK/wAAyv++vvH///////////9PT9v/AADI/ycn0//w%0A8Pz//////+fn+v+Pj+j/kZHp/+np+v//////7Oz7/yMi0v8AAMj/VVXc///////u7vv/GRnQ/wAA%0AyP+Hh+f//////+np+v8pKdP/AADI/wAAyP8uLtT/7ez7//////+AgOX/AADI/x0d0f/x8fz/1NT2%0A/wMCzP8AAMr/uLjx//////+Wlun/AADI/wkIzv8IB87/AADI/5yc6v//////sbHv/wAAyf8GBc3/%0A2Nj3/9TU9v8DAsz/AADK/7i48f//////lpbp/wAAyP8JCM7/CAfO/wAAyP+cnOr//////7Gx7/8A%0AAMn/BgXN/9jY9//u7vv/GRnQ/wAAyP+Ih+f//////+np+v8oKNP/AADI/wAAx/8tLdT/7Oz7////%0A//+AgOX/AADI/x0c0f/x8fz//////09P2v8AAMj/KCjT//Hx/P//////5ub6/46N6P+Qj+j/6Oj6%0A///////t7fv/IyPS/wAAyP9UVNz///////////+4uPD/AADK/wAAyv9SUtz/+fn+///////+/v//%0A/v7////////39/3/TU3a/wAAyv8AAMr/vb3y///////9/f///////2pq4P8AAMj/AADK/ysr1P+X%0Al+r/x8f0/8bG8/+VlOn/KCjT/wAAyv8AAMj/b2/h///////9/f////////7+///9/f7/Y2Lf/wAA%0Ayf8BAsj/AADI/wAAy/8AAMv/AADI/wEByP8AAMn/aGfg///////+/v/////////////+/v///f3/%0A//////+vr+//PTzY/w0Mzv8AAMv/AADL/w4Nz/8/P9j/s7Lv///////9/f////7/////////////%0A//////7+///8/P7///////7+///d3fj/urrx/7q68f/e3vj//v7////////8/P7//v7/////////%0A////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA%0AAAAAAAAAAAAAAA==" />
+  <title>Target store Wi-Fi</title>
+  <style media="screen" type="text/css">
+
+    body {
+      margin: 0;
+      background: #fff;
+      color: #333;
+      font-family: \'Helvetica Neue\', Helvetica, Verdana, Tahoma, sans-serif;
+      font-size: 14px;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+      line-height: 1.4em;
+    }
+
+    h1 {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 1.15;
+    }
+
+    .container {
+      max-width: 900px;
+      min-width: 300px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .targetLogo {
+      height: 100px;
+      width: 100px;
+    }
+
+    /* helper classes */
+    .h-standardMargin {
+      margin: 20px;
+    }
+
+
+
+    /*******************************************************************************
+     * FROM ADAPTIVE PATTERN LIBRARY
+     ******************************************************************************/
+
+    /*******************************************************************************
+     * Links
+     ******************************************************************************/
+
+    /* Default */
+    .link {
+      position: relative;
+      color: #333333;
+      text-decoration: none;
+    }
+    .link:hover, .link:focus {
+      outline: 0;
+      color: #666666;
+      text-decoration: underline;
+    }
+
+    /* Underline */
+    .link-underline, .editor a {
+      text-decoration: underline;
+    }
+    .link-underline:hover, .editor a:hover, .link-underline:focus, .editor a:focus {
+      text-decoration: none;
+      border-bottom: 1px dotted #666666;
+    }
+
+
+    /*******************************************************************************
+     * Buttons
+     ******************************************************************************/
+
+    .btn {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 1rem;
+      margin-right: 10px;
+      font-weight: normal;
+      text-align: center;
+      vertical-align: middle;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      cursor: pointer;
+      background-image: none;
+      border: 1px solid transparent;
+      white-space: nowrap;
+      padding: 9px 14px;
+      font-size: 15px;
+      line-height: 1.42857143;
+      border-radius: 4px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      text-decoration: none;
+    }
+    .btn:last-child {
+      margin-right: 0;
+    }
+
+    .btn:focus, .btn.is-focus, .btn:active:focus, .btn:active.is-focus {
+      outline: none;
+    }
+
+    .btn:focus, .btn.is-focus {
+      outline: #666666 dashed 1px;
+      outline-offset: 2px;
+      -moz-outline-radius: 4px;
+      text-decoration: underline;
+    }
+
+    .btn:hover {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .btn:active {
+      background-image: none;
+    }
+
+    .btn.is-disabled, .btn[disabled],
+    fieldset[disabled] .btn {
+      cursor: not-allowed;
+      pointer-events: none;
+      background-color: #f7f7f7;
+      color: #333333;
+      border-color: #d6d6d6;
+      box-shadow: none;
+    }
+
+    /*
+     * Button Primary
+     ********************************************************************/
+    .btn-primary {
+      color: #fff;
+      background-color: #cc0000;
+      border: 1px #cc0000 solid;
+    }
+
+    .btn-primary:hover {
+      color: #fff;
+      background-color: #ac0000;
+      border-color: #ac0000;
+    }
+
+    .btn-primary:active {
+      color: #fff;
+      background-color: #750000;
+      border-color: #750000;
+    }
+
+    .btn-primary.is-disabled, .btn-primary.is-disabled:hover, .btn-primary.is-disabled:focus, .btn-primary.is-disabled.focus, .btn-primary.is-disabled:active, .btn-primary.is-disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active,
+    fieldset[disabled] .btn-primary,
+    fieldset[disabled] .btn-primary:hover,
+    fieldset[disabled] .btn-primary:focus,
+    fieldset[disabled] .btn-primary.focus,
+    fieldset[disabled] .btn-primary:active,
+    fieldset[disabled] .btn-primary.active {
+      background-color: #f7f7f7;
+      color: #333333;
+      border-color: #d6d6d6;
+    }
+
+    /*
+     * Button Large
+     ********************************************************************/
+
+    .btn-lg {
+      padding: 12px 20px;
+      font-size: 18px;
+      line-height: 1.3333333;
+      border-radius: 5px;
+    }
+
+    /*
+     * Button Ripple effect for a11y
+     ********************************************************************/
+    @-webkit-keyframes hvr-ripple-out {
+      0% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+      100% {
+        top: -7px;
+        right: -7px;
+        bottom: -7px;
+        left: -7px;
+        border-width: 0;
+        opacity: 0;
+      }
+    }
+    @keyframes hvr-ripple-out {
+      0% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+      100% {
+        top: -7px;
+        right: -7px;
+        bottom: -7px;
+        left: -7px;
+        border-width: 0;
+        opacity: 0;
+      }
+    }
+
+    .btn:before {
+      display: block;
+      content: \'\';
+      position: absolute;
+      border: transparent solid 5px;
+      border-radius: 5px;
+      top: -2px;
+      right: -2px;
+      bottom: -2px;
+      left: -2px;
+      opacity: 0;
+      -webkit-animation-duration: 500ms;
+      animation-duration: 500ms;
+    }
+
+    .btn:active:before {
+      -webkit-animation-name: hvr-ripple-out;
+      animation-name: hvr-ripple-out;
+    }
+
+    .btn-primary:active:before,
+    .btn-express:active:before {
+      border-color: #750000;
+    }
+
+    .btn-default:active:before {
+      border-color: #333333;
+    }
+
+    .circle {
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 0px;
+    }
+    #circle1 {
+      width: 100px;
+      height: 100px;
+      background: #CC0000;
+      position: relative;
+    }
+
+    #circle2 {
+      width: 33.3%;
+      height: 33.3%;
+      background: #CC0000;
+      position: absolute;
+      top: 17%;
+      left: 17%;
+      display: block;
+      border: 17px solid #FFFFFF;
+    }
+
+
+    /* for smaller viewports */
+    @media (min-height: 600px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      .targetLogo {
+        height: 150px;
+        width: 150px;
+      }
+
+      .h-standardMargin {
+        margin: 30px;
+      }
+      #circle1 {
+        width: 150px;
+        height: 150px;
+      }
+      #circle2 {
+        border-width: 25px;
+      }
+    }
+
+  </style>
+<meta content="width=device-width,initial-scale=1" name="viewport" />
+<style type="text/css">:root #content &gt; #right &gt; .dose &gt; .dosesingle,
+:root #content &gt; #center &gt; .dose &gt; .dosesingle
+{display:none !important;}</style>
+<style type="text/css">:root .container &gt; .infoBoxList &gt; .shareInfoBox
+{display:none !important;}</style>
+</head>
+<body>
+  <div class="container">
+    <div class="header h-standardMargin">
+      <div class="circle" id="circle1"><div class="circle" id="circle2"></div></div>
+      </div>
+
+    <div class="messaging">
+      <h1 class="h-standardMargin">Welcome to <br /> Target Guest Wi-Fi</h1>
+<p class="h-standardMargin">By connecting you accept the
+        <a href="http://m.target.com/c/target-wireless-terms-of-use/-/N-4sr7k" class="link link-underline">Target Wireless Service Terms of Use</a>
+        and
+        <a href="http://m.target.com/c/target-wireless-service-privacy-policy/-/N-4sr7o" class="link link-underline">Privacy Notice</a>
+      </p>
+      <a title="accept &amp; connect" class="btn btn-primary btn-lg" onclick="javascript:(function() {
+       var _request = new XMLHttpRequest();
+       var url = \'https://n63.network-auth.com/Default/hi/8teLvd_/grant?continue_url=CONTINUE_URL_PLACEHOLDER\';
+       _request.open(\'HEAD\', window.location, true);
+       _request.setRequestHeader(\'X-Requested-With\', \'XMLHttpRequest\');
+       _request.onreadystatechange = function() {
+         if (_request.readyState === 4) {
+           var continue_url = _request.getResponseHeader(\'Continue-Url\');
+           window.location.href = url.replace(\'CONTINUE_URL_PLACEHOLDER\', continue_url);
+         };
+       };
+       _request.send(null);
+     })(); return false;" href="https://n63.network-auth.com/Default/hi/8teLvd_/grant?continue_url=http://m.target.com/c/in-store-wifi-adaptive-tag-pages/-/N-4th2q">
+        accept &amp; connect
+      </a>
+    </div>
+  </div>
+      <script charset="utf-8" type="text/javascript">
+              function update_form_action_from_headers(form) {
+        var _request = new XMLHttpRequest();
+        var url = \'https://n63.network-auth.com/Default/hi/8teLvd_/login?continue_url=CONTINUE_URL_PLACEHOLDER\';
+        _request.open(\'HEAD\', window.location, true);
+        _request.setRequestHeader(\'X-Requested-With\', \'XMLHttpRequest\');
+        _request.onreadystatechange = function() {
+          if (_request.readyState === 4) {
+            var continue_url = _request.getResponseHeader(\'Continue-Url\');
+            form.action = url.replace(\'CONTINUE_URL_PLACEHOLDER\', continue_url);
+            form.submit();
+          }
+        }
+        _request.send(null);
+        return false;
+      }
+
+      </script>
+
+
+
+</body></html>'

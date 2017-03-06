@@ -1,0 +1,89 @@
+u'<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+    <title>Dunkin\' Donuts - Wi-fi Terms &amp; Conditions</title>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+\t
+
+\t<link type="text/css" rel="stylesheet" href="https://www.secureconnect.com/wifi-disclaimers/wifi-images/dunkin/fonts.css" />
+\t<link type="text/css" rel="stylesheet" href="https://www.secureconnect.com/wifi-disclaimers/wifi-images/dunkin/main.css" />
+      
+    <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+    </script>
+    <script async="" src="https://www.secureconnect.com/wifi-disclaimers/wifi-images/dunkin/picturefill.js">
+    </script>
+      
+\t<title>WiFi Landing</title>
+</head>
+
+<body>
+    
+<!--Start of Modal -->
+<div class="modal">
+    <input type="checkbox" style="display:none" id="modal__trigger" />
+    <div aria-describedby="modal_desc" aria-labelledby="modal__title" role="dialog" class="modal__overlay active">
+        <div class="modal__wrap">
+            <div id="wifi-tnc-modal">
+            <label for="modal__trigger">\u2716</label>
+            <h3 id="modal__title">TERMS &amp; CONDITIONS</h3>
+            <p id="modal__desc">Welcome! This Dunkin\' Donuts restaurant is owned and operated by an independent franchisee (Franchisee) under a franchise granted by Dunkin\u2019 Donuts Franchising LLC or one of its affiliates (\u201cFranchisor\u201d). While you\u2019re here, feel free to use the complimentary Wi-Fi service (the \u201cService\u201d) being provided to you by Franchisee and Trustwave SecureConnect, Inc.
+                <br /><br />
+                In order to use this Service, you MUST agree to and comply with the Terms of Service and Acceptable Use Agreement below. By accepting the Terms of Service and Acceptable Use Agreement, you are also agreeing the Franchisor is not a provider of the Service and is in no way LIABLE FOR ANY COSTS OR DAMAGES ARISING DIRECTLY OR INDIRECTLY FROM YOUR USE OF THE SERVICE. Furthermore, you agree, at your expense, to defend and hold harmless Franchisor, Franchisee, Trustwave SecureConnect, Inc., and their respective affiliates, officers, directors and employees from and against any and all costs, damages and reasonable attorneys\u2019 fees resulting from any claim that your use of the Service injured or otherwise violated any right of any third party or violated any law.
+                <br /><br />
+                You are about to access Internet content that is not under the control of the network access provider. The network access provider is therefore not responsible for any of these sites, their content or their privacy policies. The network access provider and its staff do not endorse nor make any representations about these sites, or any information, software or other products or materials found there, or any results that may be obtained from using them. If you decide to access any Internet content, you do this entirely at your own risk and you are responsible for ensuring that any accessed material does not infringe the laws governing, but not exhaustively covering, copyright, trademarks, pornography, or any other material which is slanderous, defamatory or might cause offence in any other way.</p>
+                
+                <div class="tnc-modal-button"><a onclick="agree();" class="btn-wifi-tnc" href="#">ACCEPT &amp; CONNECT</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End of Modal -->
+
+<section class="rows" id="wifi-tnc">    
+\t<section id="hero-tnc">
+        <section id="enjoy-wifi">
+            <article>
+                <img src="https://www.secureconnect.com/wifi-disclaimers/wifi-images/dunkin/logo_dd.png" class="logo" />
+                <h1>ENJOY FREE WIFI</h1>
+                <p>Accept our <label id="wifi-trigger" for="modal__trigger">Terms &amp; Conditions</label>  to connect.</p>
+                <a onclick="agree();" class="btn-wifi-tnc" href="#">ACCEPT &amp; CONNECT</a>
+            </article>
+        </section>
+        
+        <section id="fun-fact"> 
+            <article>
+                <h2><span class="fun-fact-dash "></span><span>FUN </span> <img src="https://www.secureconnect.com/wifi-disclaimers/wifi-images/dunkin/icon_funfacts.png" /><span> FACT</span><span class="fun-fact-dash "></span></h2>
+                <p>We blend our coffee beans with a secret, special recipe.</p>
+            </article>
+        </section>
+        
+\t\t<picture>
+            <source media="(min-width: 1024px)" srcset="https://www.secureconnect.com/wifi-disclaimers/wifi-images/dunkin/terms-large-cropped-1x.jpg" />
+            <source media="(min-width: 768px)" srcset="https://www.secureconnect.com/wifi-disclaimers/wifi-images/dunkin/terms-med-cropped-1x.jpg" />
+            <img srcset="https://www.secureconnect.com/wifi-disclaimers/wifi-images/dunkin/terms-small-cropped-2x.jpg" />
+        </picture>
+        
+\t</section>
+</section>
+
+<!--  TW Form  ================================================== -->
+
+<form id="acceptform" method="post" action="/">
+  <input type="hidden" value="000d1ad67aedf809" id="magic" name="magic" />
+  <input type="hidden" value="0" id="answer" name="answer" />
+  <input type="hidden" value="http://www.msftconnecttest.com/connecttest.txt" id="4Tredir" name="4Tredir" />
+</form>
+
+<script>
+function agree(){
+    document.getElementById("answer").value="1";
+    document.forms[0].submit();
+}
+</script>
+
+
+
+</body></html>'
