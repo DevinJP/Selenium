@@ -14,6 +14,7 @@ Testing of Selenium scripts for autonomous web activities.
   4. netifaces
   5. gecko-driver
   6. pyvirtualdisplay
+  7. /etc/network/ add orig-interfaces file
 
 ## GitHub
 - Samples
